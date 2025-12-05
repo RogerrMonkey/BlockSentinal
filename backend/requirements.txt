@@ -1,0 +1,41 @@
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.23
+# Use psycopg2-binary pre-built wheel or psycopg3 as alternative
+psycopg2-binary==2.9.9 ; sys_platform != 'win32'
+psycopg==3.1.13 ; sys_platform == 'win32'
+alembic==1.13.0
+
+# Validation and serialization (using prebuilt wheels)
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# HTTP client - Compatible with Supabase
+httpx>=0.26.0
+requests==2.31.0
+
+# Task queue (for future Celery integration)
+redis==5.0.1
+
+# Security and auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+
+# Supabase - Let it manage its own dependencies
+supabase>=2.0.0
+
+# Utilities
+python-dateutil==2.8.2
+
+# Report generation
+reportlab==4.0.7  # PDF generation
+jinja2==3.1.2  # HTML templating
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
