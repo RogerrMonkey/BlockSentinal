@@ -157,6 +157,11 @@ cd backend
 #### Run Migrations
 
 ```bash
+# From repo root (recommended)
+python backend/migrations/run_migration.py
+python backend/migrations/run_current_stage_migration.py
+
+# OR from backend/migrations
 cd backend/migrations
 python run_migration.py
 python run_current_stage_migration.py
